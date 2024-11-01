@@ -13,7 +13,7 @@
 </div>
 
 <h1>Array from child component</h1>
-<app-user parentFunction="parentFunction($event)">
+<app-user (parentFunction)="parentFunction($event)">
   <div *ngFor="let user of inputData">
     {{user.id}} 
     {{user.Firstname}}
