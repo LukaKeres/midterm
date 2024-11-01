@@ -42,7 +42,7 @@ export class UserComponent{
   sendData(){
     this.parentFunction.emit(this.childpeople);
   }
-
+  constructor(private logger: DisplayService) {}
   Display(){
     DisplayService.Log(this.childpeople);
   }
